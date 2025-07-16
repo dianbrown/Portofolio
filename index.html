@@ -24,20 +24,21 @@
   <!-- NAVIGATION -->
   <nav id="main-nav" class="fixed top-0 left-0 w-full z-50 pt-8 pb-4">
   <div class="max-w-6xl mx-auto px-4 flex items-start h-full pt-4">
-    <!-- Logo stays at the far left -->
     <div class="logo-box">DB</div>
 
-    <!-- Left group: Projects & About, right next to logo -->
+    <!-- Left group: About & Projects -->
     <div class="hidden md:flex items-center space-x-6 ml-4 self-center">
-      <a href="#projects" class="nav-menu-link animate__animated animate__fadeInDown delay1">
-        Projects
-      </a>
-      <a href="#about" class="nav-menu-link animate__animated animate__fadeInDown delay2">
+      <a href="#about"
+         class="nav-menu-link animate__animated animate__fadeInDown delay1">
         About
+      </a>
+      <a href="#projects"
+         class="nav-menu-link animate__animated animate__fadeInDown delay2">
+        Projects
       </a>
     </div>
 
-    <!-- Push Contact (and mobile toggle) to the right -->
+    <!-- Contact & mobile toggle -->
     <div class="ml-auto flex items-center space-x-6">
       <a href="#contact" class="contact-box animate__animated animate__flipInX delay3">
         Contact Me
@@ -49,16 +50,15 @@
   </div>
 </nav>
 
-
-  <!-- MOBILE MENU (hidden by default) -->
-  <div id="mobile-menu"
-       class="hidden fixed inset-0 bg-white bg-opacity-95 p-8 z-30">
-    <div class="flex flex-col space-y-6 mt-16 text-2xl">
-      <a href="#projects" onclick="toggleMenu()" class="kill-link-style underline--magical">Projects</a>
-      <a href="#about"    onclick="toggleMenu()" class="kill-link-style underline--magical">About</a>
-      <a href="#contact"  onclick="toggleMenu()" class="kill-link-style underline--magical">Contact</a>
-    </div>
+<!-- MOBILE MENU -->
+<div id="mobile-menu"
+     class="hidden fixed inset-0 bg-white bg-opacity-95 p-8 z-30">
+  <div class="flex flex-col space-y-6 mt-16 text-2xl">
+    <a href="#about"    onclick="toggleMenu()" class="kill-link-style underline--magical">About</a>
+    <a href="#projects" onclick="toggleMenu()" class="kill-link-style underline--magical">Projects</a>
+    <a href="#contact"  onclick="toggleMenu()" class="kill-link-style underline--magical">Contact</a>
   </div>
+</div>
 
   <!-- HERO SECTION -->
   <header class="pt-56 text-center">
@@ -91,34 +91,40 @@
   </div>
   </header>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="py-20 bg-gray-900 text-white">
-  <div class="max-w-4xl mx-auto px-4 text-center">
-    <h2 class="w-full pt-10 leading-10 text-6xl font-extrabold mb-6 animate__animated animate__fadeInUp animate__delay-1s">Projects</h2>
-    <p>Hello world</p>
-    <!-- your project cards go here -->
-  </div>
+  <!-- ABOUT SECTION (now gray!) -->
+  <section id="about" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-6xl font-extrabold mb-6 text-center animate__animated animate__fadeInUp animate__delay-1s">
+        About Me
+      </h2>
+      <p class="text-lg leading-relaxed mb-8 text-center animate__animated animate__fadeInUp animate__delay-2s">
+        I’m an IT specialist with experience in network administration, web development, and cybersecurity…
+      </p>
+      <h3 class="text-2xl font-semibold mb-4 text-center animate__animated animate__fadeInUp animate__delay-3s">
+        Technical Skills
+      </h3>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <li class="p-4 bg-gray-800 rounded-lg text-center font-medium">HTML5</li>
+        <li class="p-4 bg-gray-800 rounded-lg text-center font-medium">CSS3 / Tailwind</li>
+        <li class="p-4 bg-gray-800 rounded-lg text-center font-medium">JavaScript</li>
+        <li class="p-4 bg-gray-800 rounded-lg text-center font-medium">Python</li>
+        <li class="p-4 bg-gray-800 rounded-lg text-center font-medium">Linux & SSH</li>
+        <li class="p-4 bg-gray-800 rounded-lg text-center font-medium">Git / GitHub</li>
+        <!-- your other skills -->
+      </ul>
+    </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="bg-white py-20">
-    <div class="max-w-4xl mx-auto px-4 text-gray-900">
-      <h2 class="text-4xl font-extrabold mb-6">About Me</h2>
-      <p class="text-lg leading-relaxed mb-8">
-        I’m an IT specialist with experience in network administration,
-        web development, and cybersecurity…  
-        <!-- fill in your bio -->
+  <!-- PROJECTS SECTION (now white!) -->
+  <section id="projects" class="bg-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-6xl font-extrabold mb-6 animate__animated animate__fadeInUp animate__delay-1s">
+        Projects
+      </h2>
+      <p class="mb-8 animate__animated animate__fadeInUp animate__delay-2s">
+        <!-- Your project intro or description -->
       </p>
-      <h3 class="text-2xl font-semibold mb-4">Technical Skills</h3>
-      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">HTML5</li>
-        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">CSS3 / Tailwind</li>
-        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">JavaScript</li>
-        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">Python</li>
-        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">Linux & SSH</li>
-        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">Git / GitHub</li>
-        <!-- add your own -->
-      </ul>
+      <!-- your project cards go here -->
     </div>
   </section>
 
