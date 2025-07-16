@@ -282,7 +282,10 @@
   }
 
 .certifications-swiper {
-  overflow: hidden;     /* still clip slides */
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;    /* still clip slides */
   position: relative;   /* for arrow positioning */
 }
 
@@ -298,6 +301,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 300px;      /* or however wide you want your cards */
+  max-width: 300px;
+
+  position: relative;
+  box-shadow:
+    0 0 10px rgba(255,255,255,0.1),   /* subtle white ambient */
+    0 0 20px rgba(53,211,153,0.25);
 }
 
 .certifications-swiper .swiper-button-prev,
