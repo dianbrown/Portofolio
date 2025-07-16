@@ -1,0 +1,126 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dian Brown – Portfolio</title>
+  <link rel="shortcut icon" href="img/logo.ico" />
+  <!-- Tailwind CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <!-- Animate.css for entrance animations -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    rel="stylesheet"
+  />
+  <!-- Your custom styles -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- NAVIGATION -->
+  <nav id="main-nav" class="fixed top-0 left-0 w-full z-50 pt-4 pb-4">
+  <div class="max-w-6xl mx-auto px-4 flex items-center">
+    <div class="logo-box">DB</div>
+    <div class="hidden md:flex ml-auto">
+      <a href="#projects"
+         class="nav-menu-link animate__animated animate__fadeInDown delay1">
+        Projects
+      </a>
+      <a href="#about"
+         class="nav-menu-link animate__animated animate__fadeInDown delay2">
+        About
+      </a>
+      <a href="#contact"
+         class="nav-menu-link animate__animated animate__fadeInDown delay3">
+        Contact
+      </a>
+    </div>
+    <button id="menu-toggle" class="md:hidden ml-auto focus:outline-none">
+      <span class="text-3xl">☰</span>
+    </button>
+  </div>
+</nav>
+
+  <!-- MOBILE MENU (hidden by default) -->
+  <div id="mobile-menu"
+       class="hidden fixed inset-0 bg-white bg-opacity-95 p-8 z-30">
+    <div class="flex flex-col space-y-6 mt-16 text-2xl">
+      <a href="#projects" onclick="toggleMenu()" class="kill-link-style underline--magical">Projects</a>
+      <a href="#about"    onclick="toggleMenu()" class="kill-link-style underline--magical">About</a>
+      <a href="#contact"  onclick="toggleMenu()" class="kill-link-style underline--magical">Contact</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <header class="pt-24 text-center">
+    <img
+    id="zach-image"
+    src="Assets/Dian.jpg"
+    alt="Photo of Dian Brown"
+    onclick="iterateClickCount()"
+    class="
+      mx-auto
+      rounded-full
+      w-80 h-80 md:w-96 md:h-96
+      object-cover object-center
+      border-8 border-gray-900
+      shadow-md
+      cursor-pointer
+      animate__animated animate__fadeIn delay2
+      transition-colors duration-300 ease-in-out
+      hover:border-green-400
+    "
+  />
+    <div
+      class="animate__animated animate__fadeInUp p-14 mt-10 xl:mt-14 text-3xl lg:text-5xl font-extrabold">
+      Hey, I’m <span class="text-green-500">Dian Brown.</span>  
+      Here, you can check out a bit more about me…
+    </div>
+  </header>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-20">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-extrabold mb-6">Projects</h2>
+      <!-- your project cards go here -->
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="bg-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-gray-900">
+      <h2 class="text-4xl font-extrabold mb-6">About Me</h2>
+      <p class="text-lg leading-relaxed mb-8">
+        I’m an IT specialist with experience in network administration,
+        web development, and cybersecurity…  
+        <!-- fill in your bio -->
+      </p>
+      <h3 class="text-2xl font-semibold mb-4">Technical Skills</h3>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">HTML5</li>
+        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">CSS3 / Tailwind</li>
+        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">JavaScript</li>
+        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">Python</li>
+        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">Linux & SSH</li>
+        <li class="p-4 bg-gray-100 rounded-lg text-center font-medium">Git / GitHub</li>
+        <!-- add your own -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-extrabold mb-6">Get in Touch</h2>
+      <!-- contact form or links -->
+    </div>
+  </section>
+
+  <!-- your custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
