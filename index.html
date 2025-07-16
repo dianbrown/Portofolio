@@ -22,28 +22,33 @@
 <body class="bg-white text-gray-900">
 
   <!-- NAVIGATION -->
-  <nav id="main-nav" class="fixed top-0 left-0 w-full z-50 pt-4 pb-4">
-  <div class="max-w-6xl mx-auto px-4 flex items-center">
+  <nav id="main-nav" class="fixed top-0 left-0 w-full z-50 pt-8 pb-4">
+  <div class="max-w-6xl mx-auto px-4 flex items-start h-full pt-4">
+    <!-- Logo stays at the far left -->
     <div class="logo-box">DB</div>
-    <div class="hidden md:flex ml-auto">
-      <a href="#projects"
-         class="nav-menu-link animate__animated animate__fadeInDown delay1">
+
+    <!-- Left group: Projects & About, right next to logo -->
+    <div class="hidden md:flex items-center space-x-6 ml-4 self-center">
+      <a href="#projects" class="nav-menu-link animate__animated animate__fadeInDown delay1">
         Projects
       </a>
-      <a href="#about"
-         class="nav-menu-link animate__animated animate__fadeInDown delay2">
+      <a href="#about" class="nav-menu-link animate__animated animate__fadeInDown delay2">
         About
       </a>
-      <a href="#contact"
-         class="nav-menu-link animate__animated animate__fadeInDown delay3">
-        Contact
-      </a>
     </div>
-    <button id="menu-toggle" class="md:hidden ml-auto focus:outline-none">
-      <span class="text-3xl">☰</span>
-    </button>
+
+    <!-- Push Contact (and mobile toggle) to the right -->
+    <div class="ml-auto flex items-center space-x-6">
+      <a href="#contact" class="contact-box animate__animated animate__flipInX delay3">
+        Contact Me
+      </a>
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <span class="text-3xl">☰</span>
+      </button>
+    </div>
   </div>
 </nav>
+
 
   <!-- MOBILE MENU (hidden by default) -->
   <div id="mobile-menu"
@@ -56,9 +61,9 @@
   </div>
 
   <!-- HERO SECTION -->
-  <header class="pt-24 text-center">
+  <header class="pt-56 text-center">
     <img
-    id="zach-image"
+    id="dian-image"
     src="Assets/Dian.jpg"
     alt="Photo of Dian Brown"
     onclick="iterateClickCount()"
@@ -75,19 +80,24 @@
       hover:border-green-400
     "
   />
+  <div class="max-w-6xl mx-auto px-4">
     <div
-      class="animate__animated animate__fadeInUp p-14 mt-10 xl:mt-14 text-3xl lg:text-5xl font-extrabold">
-      Hey, I’m <span class="text-green-500">Dian Brown.</span>  
+      class="animate__animated animate__fadeInUp
+             p-14 mt-10 xl:mt-14
+             text-3xl lg:text-5xl font-extrabold">
+      Hey, I’m <span class="text-green-500">Dian Brown.</span><br/>
       Here, you can check out a bit more about me…
     </div>
+  </div>
   </header>
 
   <!-- PROJECTS SECTION -->
-  <section id="projects" class="py-20">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl font-extrabold mb-6">Projects</h2>
-      <!-- your project cards go here -->
-    </div>
+  <section id="projects" class="py-20 bg-gray-900 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="w-full pt-10 leading-10 text-6xl font-extrabold mb-6 animate__animated animate__fadeInUp animate__delay-1s">Projects</h2>
+    <p>Hello world</p>
+    <!-- your project cards go here -->
+  </div>
   </section>
 
   <!-- ABOUT SECTION -->

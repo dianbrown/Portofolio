@@ -54,8 +54,8 @@
   border-radius: .375rem;          /* 6px */
   border-color: #111827;           /* Tailwind’s gray-900 */
   padding: .5rem;                  /* 8px */
-  font-size: 1.5rem;               /* 24px, text-2xl */
-  line-height: 2rem;               /* 32px, leading-8 */
+  font-size: 1.875rem;               /* 24px, text-3xl */
+  line-height: 2.25rem;               /* 32px, leading-9 */
   font-weight: 800;                /* extrabold */
   color: #111827;                  /* gray-900 */
 }
@@ -69,8 +69,8 @@
   margin-left: 1.5rem;    /* ml-6 */
   margin-right: 0.75rem;  /* mr-3 */
   padding: 0 0.25rem;      /* small left/right padding */
-  font-size: 1.5rem;       /* text-2xl */
-  line-height: 2rem;       /* leading-8 */
+  font-size: 1.875rem;       /* text-3xl */
+  line-height: 2.25rem;       /* leading-9 */
   font-weight: 800;        /* extrabold */
   cursor: pointer;
   color: inherit;
@@ -107,7 +107,7 @@
   position: absolute;
   top: 0; left: 0;
   width: 100%;
-  height: 0.25rem;              /* 4px “tiny” line */
+  height: 1.5rem;              /* 4px “tiny” line */
   background-color: #35D399;    /* Tailwind green-400 */
   transition: height 0.3s ease-in-out;
   z-index: -1;                  /* sit behind your nav content */
@@ -125,5 +125,32 @@
   transition: background-size 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 #main-nav.scrolled .nav-menu-link {
-  color: #ffffff;
+  color: #111827;  /* black text */
+  background-image: linear-gradient(120deg, #ca3bf6 0%, #ca3bf6 100%); /* blue-500 */
+  background-repeat: no-repeat;
+  background-size: 100% 0.25em;  /* persistent thin underline */
+  background-position: left bottom;
+}
+
+#main-nav.scrolled .nav-menu-link:hover {
+  background-size: 100% 100%;    /* grow from underline → full */
+  color: #030202;                /* white text on blue */
+}
+
+.contact-box {
+  display: inline-block;
+  user-select: none;
+  border: 4px solid #111827;      /* same gray-900 border */
+  border-radius: .375rem;         /* 6px */
+  padding: .5rem;                 /* 8px */
+  font-size: 1.875rem;              /* text-3xl */
+  line-height: 2.25rem;              /* leading-9 */
+  font-weight: 800;               /* extrabold */
+  color: #111827;                 /* gray-900 text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-box:hover {
+  background-color: #111827;      /* fill black */
+  color: #ffffff;                 /* text white */
 }
