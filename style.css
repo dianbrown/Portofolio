@@ -186,7 +186,7 @@
   content: "";
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
-  background-color: goldenrod;  /* outline color */
+  background-color: #ca3bf6;  /* outline color rgb(175, 32, 218)*/
   clip-path: polygon(
     50% 0%, 93.3% 25%, 93.3% 75%,
     50% 100%, 6.7% 75%, 6.7% 25%
@@ -280,4 +280,40 @@
     .honeycomb-container .honeycomb-item:nth-child(9n+8) {grid-column:6}
     .honeycomb-container .honeycomb-item:nth-child(9n+0) {grid-column:8}
   }
+
+.certifications-swiper {
+  overflow: hidden;     /* still clip slides */
+  position: relative;   /* for arrow positioning */
+}
+
+/* still let the inner wrapper overflow so looped clones can slide in/out */
+.certifications-swiper .swiper-wrapper {
+  overflow: visible !important;
+}
+
+.certifications-swiper .swiper-slide {
+  background: #1f1f2e;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.certifications-swiper .swiper-button-prev,
+.certifications-swiper .swiper-button-next {
+  overflow: visible;    /* prevent clipping on the buttons */
+  z-index: 20;          
+}
+
+.certifications-swiper .swiper-pagination-bullet {
+  background: #666;
+  opacity: 1;
+}
+.certifications-swiper .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+
+
 }

@@ -16,6 +16,10 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     rel="stylesheet"
   />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
   <!-- Your custom styles -->
   <link href="style.css" rel="stylesheet" />
 </head>
@@ -131,17 +135,222 @@
           </a>
         </li>
         <li class="honeycomb-item">
-          <a href="#CPP" title="C++">
-            <img src="Assets/java-7b6569e8.png" alt="C++">
+          <a href="#java" title="java">
+            <img src="Assets/java-7b6569e8.png" alt="java">
+          </a>
+        </li>
+        <li class="honeycomb-item">
+          <a href="#tailwind" title="tailwind">
+            <img src="Assets/tailwind-6ece120d.png" alt="tailwind">
+          </a>
+        </li>
+        <li class="honeycomb-item">
+          <a href="#postgresql" title="postgresql">
+            <img src="Assets/postgresql-37e8b3be.png" alt="postgresql">
+          </a>
+        </li>
+        <li class="honeycomb-item">
+          <a href="#threeJS" title="threeJS">
+            <img src="Assets/threejs-fe160e71.svg" alt="threejs">
           </a>
         </li>
   <!-- repeat one <li> per skill, swapping the href/title/src/alt accordingly -->
       </ul>
-      <h3 class="text-2xl font-semibold mb-4 text-center animate__animated animate__fadeInUp animate__delay-3s">
-        Certifications
-      </h3>
+      <section id="certifications" class="py-20 bg-transparent">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-4xl font-extrabold mb-8">Certifications</h2>
+
+          <!-- Swiper -->
+<div class="swiper certifications-swiper">
+  <div class="swiper-wrapper">
+    <!-- SLIDE 1 -->
+    <div class="swiper-slide">
+      <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
+        <div>
+          <div class="relative w-full h-[50px] mb-4">
+            <img src="/assets/github-3b4e1609.png"
+                 alt="Github Foundations"
+                 class="w-auto h-full object-contain no-select">
+          </div>
+          <h3 class="text-white font-bold text-[20px] mb-2 no-select">
+            Github Foundations 0
+          </h3>
+          <p class="text-secondary text-[12px] mb-1 no-select">
+            Professional Certificate
+          </p>
+          <p class="text-secondary text-[12px] mb-3 no-select">
+            Issued: Sep 2024 – Expires: Sep 2027
+          </p>
+          <ul class="list-disc ml-5 space-y-1">
+            <li class="text-white-100 text-[12px] pl-1 tracking-wider no-select">
+              Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4 flex justify-end no-select">
+          <a href="https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
+            View Credential
+          </a>
+        </div>
+      </div>
     </div>
-  </section>
+
+    <!-- SLIDE 2 (copy the same structure with different content) -->
+    <div class="swiper-slide">
+      <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
+        <div>
+          <div class="relative w-full h-[50px] mb-4">
+            <img src="/assets/github-3b4e1609.png"
+                 alt="Github Foundations"
+                 class="w-auto h-full object-contain no-select">
+          </div>
+          <h3 class="text-white font-bold text-[20px] mb-2 no-select">
+            Github Foundations 1
+          </h3>
+          <p class="text-secondary text-[12px] mb-1 no-select">
+            Professional Certificate
+          </p>
+          <p class="text-secondary text-[12px] mb-3 no-select">
+            Issued: Sep 2024 – Expires: Sep 2027
+          </p>
+          <ul class="list-disc ml-5 space-y-1">
+            <li class="text-white-100 text-[12px] pl-1 tracking-wider no-select">
+              Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4 flex justify-end no-select">
+          <a href="https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
+            View Credential
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3, 4, 5… just keep pasting the same skeleton and swapping in each cert’s data -->
+    <!-- SLIDE 3 -->
+    <div class="swiper-slide">
+      <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
+        <div>
+          <div class="relative w-full h-[50px] mb-4">
+            <img src="/assets/github-3b4e1609.png"
+                 alt="Github Foundations"
+                 class="w-auto h-full object-contain no-select">
+          </div>
+          <h3 class="text-white font-bold text-[20px] mb-2 no-select">
+            Github Foundations 2
+          </h3>
+          <p class="text-secondary text-[12px] mb-1 no-select">
+            Professional Certificate
+          </p>
+          <p class="text-secondary text-[12px] mb-3 no-select">
+            Issued: Sep 2024 – Expires: Sep 2027
+          </p>
+          <ul class="list-disc ml-5 space-y-1">
+            <li class="text-white-100 text-[12px] pl-1 tracking-wider no-select">
+              Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4 flex justify-end no-select">
+          <a href="https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
+            View Credential
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="swiper-slide">
+      <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
+        <div>
+          <div class="relative w-full h-[50px] mb-4">
+            <img src="/assets/github-3b4e1609.png"
+                 alt="Github Foundations"
+                 class="w-auto h-full object-contain no-select">
+          </div>
+          <h3 class="text-white font-bold text-[20px] mb-2 no-select">
+            Github Foundations 3
+          </h3>
+          <p class="text-secondary text-[12px] mb-1 no-select">
+            Professional Certificate
+          </p>
+          <p class="text-secondary text-[12px] mb-3 no-select">
+            Issued: Sep 2024 – Expires: Sep 2027
+          </p>
+          <ul class="list-disc ml-5 space-y-1">
+            <li class="text-white-100 text-[12px] pl-1 tracking-wider no-select">
+              Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4 flex justify-end no-select">
+          <a href="https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
+            View Credential
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 5 -->
+    <div class="swiper-slide">
+      <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
+        <div>
+          <div class="relative w-full h-[50px] mb-4">
+            <img src="/assets/github-3b4e1609.png"
+                 alt="Github Foundations"
+                 class="w-auto h-full object-contain no-select">
+          </div>
+          <h3 class="text-white font-bold text-[20px] mb-2 no-select">
+            Github Foundations 4
+          </h3>
+          <p class="text-secondary text-[12px] mb-1 no-select">
+            Professional Certificate
+          </p>
+          <p class="text-secondary text-[12px] mb-3 no-select">
+            Issued: Sep 2024 – Expires: Sep 2027
+          </p>
+          <ul class="list-disc ml-5 space-y-1">
+            <li class="text-white-100 text-[12px] pl-1 tracking-wider no-select">
+              Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4 flex justify-end no-select">
+          <a href="https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
+            View Credential
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /swiper-wrapper -->
+    <!-- SLIDE 3, 4, 5… just keep pasting the same skeleton and swapping in each cert’s data -->
+
+    <!-- SLIDE 3, 4, 5… just keep pasting the same skeleton and swapping in each cert’s data -->
+
+  <!-- Swiper nav & pagination -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+      </section>
+</section>
 
   <!-- PROJECTS SECTION (now white!) -->
   <section id="projects" class="bg-white py-20">
@@ -157,7 +366,7 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact" class="py-20">
+  <section id="contact" class="py-20 bg-gray-900 text-white">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h2 class="text-4xl font-extrabold mb-6">Get in Touch</h2>
       <!-- contact form or links -->
@@ -165,6 +374,8 @@
   </section>
 
   <!-- your custom script -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
+  
 </body>
 </html>
