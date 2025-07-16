@@ -34,3 +34,12 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("scrolled");
   }
 });
+
+// Honeycomb background-image helper
+document.querySelectorAll(".honeycomb-item a").forEach(link => {
+  const img = link.querySelector("img");
+  if (img) {
+    link.style.backgroundImage = `url('${img.src}')`;
+  }
+});
+
