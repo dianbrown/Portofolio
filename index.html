@@ -364,16 +364,22 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact" class="py-20 bg-gray-900 text-white">
-    <div class="max-w-4xl mx-auto px-4 text-center">
+  <section id="contact"
+         class="relative py-20 bg-gray-900 text-white overflow-hidden
+                min-h-[400px]">
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
       <h2 class="text-4xl font-extrabold mb-6">Get in Touch</h2>
-      <!-- contact form or links -->
+      <!-- your contact form or links here -->
     </div>
+    <!-- Three.js canvas sits behind your content -->
+    <canvas id="moonCanvas" class="absolute inset-0 w-full h-full"></canvas>
   </section>
 
   <!-- your custom script -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r150/three.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r150/examples/js/loaders/GLTFLoader.min.js"></script>
+  <script defer src="script.js"></script>
   
 </body>
 </html>
