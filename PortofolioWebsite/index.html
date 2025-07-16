@@ -22,31 +22,28 @@
 <body class="bg-white text-gray-900">
 
   <!-- NAVIGATION -->
-  <nav class="fixed top-0 w-full bg-white shadow z-20">
-    <div class="max-w-6xl mx-auto px-4 flex items-center h-16">
-      <!-- Logo / Name -->
-      <div class="logo-box">DB</div>
-      <!-- Desktop Links -->
-      <div class="hidden md:flex ml-auto">
-        <a href="#projects"
-           class="nav-menu-link kill-link-style animate__animated animate__fadeInDown delay1">
-          Projects
-        </a>
-        <a href="#about"
-           class="nav-menu-link kill-link-style animate__animated animate__fadeInDown delay2">
-          About
-        </a>
-        <a href="#contact"
-           class="nav-menu-link kill-link-style animate__animated animate__fadeInDown delay3">
-          Contact
-        </a>
-      </div>
-      <!-- Mobile Menu Toggle -->
-      <button id="menu-toggle" class="md:hidden ml-auto focus:outline-none">
-        <span class="text-3xl">☰</span>
-      </button>
+  <nav id="main-nav" class="fixed top-0 left-0 w-full z-50 pt-4 pb-4">
+  <div class="max-w-6xl mx-auto px-4 flex items-center">
+    <div class="logo-box">DB</div>
+    <div class="hidden md:flex ml-auto">
+      <a href="#projects"
+         class="nav-menu-link animate__animated animate__fadeInDown delay1">
+        Projects
+      </a>
+      <a href="#about"
+         class="nav-menu-link animate__animated animate__fadeInDown delay2">
+        About
+      </a>
+      <a href="#contact"
+         class="nav-menu-link animate__animated animate__fadeInDown delay3">
+        Contact
+      </a>
     </div>
-  </nav>
+    <button id="menu-toggle" class="md:hidden ml-auto focus:outline-none">
+      <span class="text-3xl">☰</span>
+    </button>
+  </div>
+</nav>
 
   <!-- MOBILE MENU (hidden by default) -->
   <div id="mobile-menu"
