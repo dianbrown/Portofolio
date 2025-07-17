@@ -72,59 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
   swiper.slideToLoop(0, 0);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Grab the canvas
-  const canvas = document.getElementById('moonCanvas');
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-  renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(canvas.clientWidth, canvas.clientHeight);
-
-  // Create scene & camera
-  const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x000000);
-  const camera = new THREE.PerspectiveCamera(45, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
-  camera.position.set(0, 0, 3);
-
-  // Light
-  const light = new THREE.DirectionalLight(0xffffff, 1);
-  light.position.set(5, 5, 5);
-  scene.add(light);
-
-  // GLTF loader
-  const loader = new THREE.GLTFLoader();
-  let planet = null;
-  loader.load(
-    'Assets/Planet.glb',
-    gltf => {
-      planet = gltf.scene;
-      planet.position.set(0, 0, 0);
-      planet.scale.set(3, 3, 3);
-      camera.position.set(0,0,1.5);
-      scene.add(planet);
-    },
-    undefined,
-    err => console.error('GLB load error:', err)
-  );
-
-  // Resize handling
-  window.addEventListener('resize', () => {
-    const w = canvas.clientWidth;
-    const h = canvas.clientHeight;
-    renderer.setSize(w, h);
-    camera.aspect = w / h;
-    camera.updateProjectionMatrix();
-  });
-
-  // Animation loop
-  function animate() {
-    requestAnimationFrame(animate);
-    if (planet) planet.rotation.y += 0.001;
-    renderer.render(scene, camera);
-  }
-  animate();
-});
-
-
 
 
 
