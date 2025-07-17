@@ -365,11 +365,46 @@
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="py-20 bg-gray-900 text-white">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-extrabold mb-6">Get in Touch</h2>
-      <!-- contact form or links -->
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-4xl font-extrabold mb-6">Get in Touch</h2>
+    <div class="contact_us">
+      <div class="responsive-container-block container">
+        <form class="form-box">
+          <div class="container-block form-wrapper">
+            <!-- <-- Now the heading is _inside_ the white box -->
+            <h3 class="contact-form-title text-3xl font-bold mb-4">Contact</h3>
+            <p class="text-blk contact-subhead">
+              Have a project in mind or just want to say hi? Fill out the form below!
+            </p>
+            <div class="responsive-container-block">
+              <div class="responsive-cell-block" id="first-name">
+              <p class="text-blk input-title">First Name</p>
+              <input class="input" name="firstName" placeholder="Your first name">
+            </div>
+            <div class="responsive-cell-block" id="last-name">
+              <p class="text-blk input-title">Last Name</p>
+              <input class="input" name="lastName" placeholder="Your last name">
+            </div>
+            <div class="responsive-cell-block" id="email">
+              <p class="text-blk input-title">Email</p>
+              <input class="input" type="email" name="email" placeholder="you@example.com">
+            </div>
+            <div class="responsive-cell-block" id="phone">
+              <p class="text-blk input-title">Phone No.</p>
+              <input class="input" type="tel" name="phone" placeholder="(123) 456-7890">
+            </div>
+            <div class="responsive-cell-block full-width" id="message">
+              <p class="text-blk input-title">Message</p>
+              <textarea class="textinput" name="message" placeholder="Write your message..."></textarea>
+            </div>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- your custom script -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
