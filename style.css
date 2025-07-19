@@ -435,4 +435,260 @@
   cursor: default;
 }
 
+.certification-card img {
+  max-height: 100px;
+  width: auto;
+  display: block;
+  margin: 0 auto 1rem; /* centers + adds bottom gutter */
+}
+
+/* ================================
+   Projects Section: Glass Cards
+   ================================ */
+#projects {
+  position: relative;
+  padding: 4rem 0;
+}
+
+#projects .card-wrapper {
+  position: relative;
+  width: 320px;
+  height: 520px; /* enough to contain card (+20px top offset) */
+  margin: 0 auto;
+}
+
+/* The “glass” card */
+#projects .card-wrapper .card {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 500px;
+  border-radius: 16px;
+  background: rgba(25, 25, 25, 0.67);
+  backdrop-filter: blur(4px);
+  box-shadow:
+    inset 0 2px 2px rgba(231,196,160,0.53),
+    inset 0 -2px 2px rgba(0,0,0,0.20);
+  color: #ccc;
+  text-shadow: 1px 1px 3px #333a;
+  padding: 24px 42px 24px 24px;
+  z-index: 10;
+}
+
+#projects .card-wrapper .card h2,
+#projects .card-wrapper .card p {
+  margin: 8px 0;
+}
+
+#projects .card-wrapper .card .button {
+  display: inline-block;
+  width: fit-content;
+  border-radius: 100px;
+  padding: 8px 36px;
+  margin-top: 12px;
+  background: rgba(255,255,255,0.13);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.20),
+    inset 120px 0 100px -100px rgba(0,0,0,0.80);
+  cursor: pointer;
+  transition: box-shadow 0.4s ease-in-out;
+}
+#projects .card-wrapper .card .button:hover {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.20),
+    inset 200px 0 100px -100px rgba(0,0,0,0.60),
+    -4px 0 8px 2px rgba(255,255,255,0.13);
+}
+
+/* The wobbling “glass‐back” accents */
+#projects .card-wrapper .accents {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 520px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 5;
+}
+
+#projects .card-wrapper .accents .acc-card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 330px;
+  height: 500px;
+  background: rgba(238,238,238,0.88);
+  opacity: 0.8;
+  border-radius: 16px;
+  box-shadow:
+    inset 0 2px 2px rgba(224,201,178,0.40),
+    inset 0 -2px 2px rgba(0,0,0,0.25);
+  backdrop-filter: blur(4px);
+}
+#projects .card-wrapper .accents .acc-card:nth-child(1) {
+  animation: wobble 18s ease-in-out infinite;
+}
+#projects .card-wrapper .accents .acc-card:nth-child(2) {
+  animation: wobble 22s ease-in-out -6s infinite reverse;
+}
+#projects .card-wrapper .accents .acc-card:nth-child(3) {
+  animation: wobble 26s ease-in-out -18s infinite;
+}
+
+/* rotating circle highlights */
+/* ————— Projects: spinning purple chaser trail ————— */
+#projects .card-wrapper .accents .light {
+  position: absolute;
+  top: 50%; left: -60px;       /* tweak so it just peeks out left */
+  width: 200px; height: 200px;
+  border: 4px solid transparent;
+  border-top-color: rgba(202,59,246,0.9);
+  border-right-color: rgba(202,59,246,0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(202,59,246,0.5);
+  animation: spin 2.5s linear infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+#projects .card-wrapper .accents .light.sm {
+  position: absolute;
+  top: 20%; right: -40px;       /* tweak so it just peeks out right */
+  width: 140px; height: 140px;
+  border: 4px solid transparent;
+  border-top-color: rgba(202,59,246,0.9);
+  border-right-color: rgba(202,59,246,0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(202,59,246,0.5);
+  animation: spin 1.5s linear infinite;
+  animation-delay: 0.2s;
+  pointer-events: none;
+  z-index: 5;
+}
+
+#projects .card-wrapper .accents {
+  .top-light {
+    position: absolute;
+    top: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 284px;
+    height: 6px;
+    background: #fffef9;
+    border-radius: 10px;
+    box-shadow:
+      0   0px  1px  1px  #ffc78e,
+      0   1px   2px  1px  #ff942977,
+      0   2px   6px  1px  #e98b2d77,
+      0   4px  12px  0px  #ff9e3d99,
+      0  12px  20px 12px  #ff800044;
+    z-index: 5;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Animations */
+@keyframes wobble {
+  0%   { transform: translateX(-50%) translateY(20px) rotate(-3deg) scale(1); }
+  20%  { transform: translateX(-50%) translateX(-44px) translateY(-8px) rotate(6deg) scale(1.02); }
+  60%  { transform: translateX(-50%) translateX(32px) translateY(18px) rotate(-8deg) scale(1); }
+  80%  { transform: translateX(-50%) translateX(-42px) translateY(-22px) rotate(12deg) scale(0.94); }
+  100% { transform: translateX(-50%) translateY(20px) rotate(-3deg) scale(1); }
+}
+
+accents .acc-card {
+  animation: wobble 18s linear infinite alternate both;
+}
+
+/* ————— Projects: spinning purple trail ————— */
+/* make sure your wrapper is .card-wrapper */
+#projects .card-wrapper {
+  width: 320px;
+  height: 520px; /* gives room for 500px card + 20px top offset */
+  position: relative;
+  margin-bottom: 4rem; /* spacing if you stack multiple */
+}
+
+/* outer ring */
+#projects .card-wrapper .accents .light {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; height: 200px;
+  border: 4px solid transparent;
+  border-top-color: rgba(202,59,246,0.9);
+  border-right-color: rgba(202,59,246,0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(202,59,246,0.5);
+  animation: spin 2.5s linear infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* inner ring */
+#projects .card-wrapper .accents .light.sm {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px; height: 140px;
+  border: 4px solid transparent;
+  border-top-color: rgba(202,59,246,0.9);
+  border-right-color: rgba(202,59,246,0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(202,59,246,0.5);
+  animation: spin 1.5s linear infinite;
+  animation-delay: 0.2s;
+  pointer-events: none;
+  z-index: 5;
+}
+
+
+/* 360° spin keyframes */
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ==== peek‑out rings for Projects cards ==== */
+/* outer ring peeks out left */
+#projects .card-wrapper .accents .light {
+  /* remove the old 50%‑50% centering */
+  left: -60px;           /* tweak this so the ring just peeks out */
+  top: 70%;
+  transform: translateY(-50%) rotate(0deg);
+  transform-origin: center center;
+}
+
+/* inner ring peeks out right */
+#projects .card-wrapper .accents .light.sm {
+  left: auto;            /* cancel the left value */
+  right: -40px;          /* tweak this to taste */
+  top: 20%;
+  transform: translateY(-50%) rotate(0deg);
+  transform-origin: center center;
+}
+
+/* spin animation must preserve that translateY(-50%) */
+@keyframes spin {
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+#projects {
+  background-color: #343434;  /* whatever hex/RGBA you like */
+  padding-top: 4rem;          /* keep your existing vertical padding */
+  padding-bottom: 4rem;
+}
+
 }
