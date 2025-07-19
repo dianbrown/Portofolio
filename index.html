@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dian Brown – Portfolio</title>
+  <title>Dian Brown - Portfolio</title>
   <link rel="shortcut icon" href="img/logo.ico" />
   <!-- Tailwind CSS -->
   <link
@@ -44,6 +44,11 @@
          class="nav-menu-link animate__animated animate__fadeInDown delay2">
         Projects
       </a>
+      <!--TODO add cv pdf to files and set link up-->
+      <a href="#" 
+         class="nav-menu-link animate__animated animate__fadeInDown delay2">
+        My CV
+      </a>
     </div>
 
     <!-- Contact & mobile toggle -->
@@ -61,7 +66,7 @@
 <!-- MOBILE MENU -->
 <div id="mobile-menu"
      class="hidden fixed inset-0 bg-white bg-opacity-95 p-8 z-30">
-  <div class="flex flex-col space-y-6 mt-16 text-2xl">
+  <div class="flex flex-col space-y-6 mt-24 text-2xl">
     <a href="#about"    onclick="toggleMenu()" class="kill-link-style underline--magical">About</a>
     <a href="#projects" onclick="toggleMenu()" class="kill-link-style underline--magical">Projects</a>
     <a href="#contact"  onclick="toggleMenu()" class="kill-link-style underline--magical">Contact</a>
@@ -73,9 +78,8 @@
   <header class="pt-56 text-center">
     <img
     id="dian-image"
-    src="Assets/Dian.jpg"
+    src="Assets/Images/Dian.jpg"
     alt="Photo of Dian Brown"
-    onclick="iterateClickCount()"
     class="
       mx-auto
       rounded-full
@@ -83,11 +87,11 @@
       object-cover object-center
       border-8 border-gray-900
       shadow-md
-      cursor-pointer
       animate__animated animate__fadeIn delay2
       transition-colors duration-300 ease-in-out
       hover:border-green-400
     "
+    draggable="false"
   />
   <div class="max-w-6xl mx-auto px-4">
     <div
@@ -118,47 +122,47 @@
       <ul class="honeycomb-container">
         <li class="honeycomb-item">
           <a href="#html5" title="HTML5">
-            <img src="Assets/HTML5_logo_and_wordmark.svg.png" alt="HTML5">
+            <img src="Assets/Images/HTML5_logo_and_wordmark.svg.png" alt="HTML5">
           </a>
         </li>
         <li class="honeycomb-item">
           <a href="#css3" title="CSS3">
-            <img src="Assets/icons8-css3.svg" alt="CSS3">
+            <img src="Assets/Images/icons8-css3.svg" alt="CSS3">
           </a>
         </li>
         <li class="honeycomb-item">
           <a href="#javascript" title="JavaScript">
-            <img src="Assets/JS.png" alt="JavaScript">
+            <img src="Assets/Images/JS.png" alt="JavaScript">
           </a>
         </li>
         <li class="honeycomb-item">
           <a href="#python" title="Python">
-            <img src="Assets/Python_logo_01.svg" alt="Python">
+            <img src="Assets/Images/Python_logo_01.svg" alt="Python">
           </a>
         </li>
         <li class="honeycomb-item">
           <a href="#CPP" title="C++">
-            <img src="Assets/CPP.svg" alt="C++">
+            <img src="Assets/Images/CPP.svg" alt="C++">
           </a>
         </li>
         <li class="honeycomb-item">
           <a href="#java" title="java">
-            <img src="Assets/java-7b6569e8.png" alt="java">
+            <img src="Assets/Images/java-7b6569e8.png" alt="java">
           </a>
         </li>
         <li class="honeycomb-item">
           <a href="#tailwind" title="tailwind">
-            <img src="Assets/tailwind-6ece120d.png" alt="tailwind">
+            <img src="Assets/Images/tailwind-6ece120d.png" alt="tailwind">
           </a>
         </li>
         <li class="honeycomb-item">
           <a href="#postgresql" title="postgresql">
-            <img src="Assets/postgresql-37e8b3be.png" alt="postgresql">
+            <img src="Assets/Images/postgresql-37e8b3be.png" alt="postgresql">
           </a>
         </li>
         <li class="honeycomb-item">
-          <a href="#threeJS" title="threeJS">
-            <img src="Assets/threejs-fe160e71.svg" alt="threejs">
+          <a href="#dart" title="dart">
+            <img src="Assets/Images/dart.png" alt="threejs">
           </a>
         </li>
   <!-- repeat one <li> per skill, swapping the href/title/src/alt accordingly -->
@@ -193,7 +197,7 @@
           </p>
         </div>
         <div class="mt-6 self-center justify-end no-select">
-          <a href="https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803"
+          <a href="Assets/files/BHSC OHS Degree.pdf"
              target="_blank"
              rel="noopener noreferrer"
              class="self-center black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
@@ -213,7 +217,7 @@
                  class="w-auto h-full object-contain no-select">
           </div>
           <h3 class="text-white font-bold text-[20px] mb-4 no-select">
-            BSC Information Science
+            BSC Information Technology
           </h3>
           <p class="text-secondary text-[12px] mb-1 no-select">
             Degree
@@ -226,7 +230,7 @@
           </p>
         </div>
         <div class="mt-6 self-center justify-end no-select">
-          <a href="https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803"
+          <a href="#"
              target="_blank"
              rel="noopener noreferrer"
              class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
@@ -256,7 +260,7 @@
           </p>
         </div>
         <div class="mt-6 self-center justify-end no-select">
-          <a href="https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803"
+          <a href="#"
              target="_blank"
              rel="noopener noreferrer"
              class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
@@ -271,27 +275,25 @@
       <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
         <div>
           <div class="relative w-full h-[50px] mb-4">
-            <img src="/assets/github-3b4e1609.png"
-                 alt="Github Foundations"
+            <img src="Assets/Images/Google.png"
+                 alt="Google Course"
                  class="w-auto h-full object-contain no-select">
           </div>
-          <h3 class="text-white font-bold text-[20px] mb-2 no-select">
-            Github Foundations 3
+          <h3 class="text-white font-bold text-[20px] mb-4 no-select">
+            Professional Machine Learning Engineer
           </h3>
           <p class="text-secondary text-[12px] mb-1 no-select">
             Professional Certificate
           </p>
-          <p class="text-secondary text-[12px] mb-3 no-select">
-            Issued: Sep 2024 – Expires: Sep 2027
+          <p class="text-secondary text-[12px] mb-1 no-select">
+            Issued: WIP
           </p>
-          <ul class="list-disc ml-5 space-y-1">
-            <li class="text-white-100 text-[12px] pl-1 tracking-wider no-select">
-              Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow
-            </li>
-          </ul>
+          <p class="text-secondary text-[12px] mb-3 no-select">
+            Currently still completing
+          </p>
         </div>
         <div class="mt-6 self-center justify-end no-select">
-          <a href="https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803"
+          <a href="#"
              target="_blank"
              rel="noopener noreferrer"
              class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
@@ -306,27 +308,25 @@
       <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
         <div>
           <div class="relative w-full h-[50px] mb-4">
-            <img src="/assets/github-3b4e1609.png"
-                 alt="Github Foundations"
+            <img src="/Assets/Images/GoldenKey.png"
+                 alt="Golden Key"
                  class="w-auto h-full object-contain no-select">
           </div>
-          <h3 class="text-white font-bold text-[20px] mb-2 no-select">
-            Github Foundations 4
+          <h3 class="text-white font-bold text-[20px] mb-4 no-select">
+            Golden Key
           </h3>
           <p class="text-secondary text-[12px] mb-1 no-select">
-            Professional Certificate
+            Academic Certificate
+          </p>
+          <p class="text-secondary text-[12px] mb-1 no-select">
+            Issued: 2021
           </p>
           <p class="text-secondary text-[12px] mb-3 no-select">
-            Issued: Sep 2024 – Expires: Sep 2027
+            Obtained during university
           </p>
-          <ul class="list-disc ml-5 space-y-1">
-            <li class="text-white-100 text-[12px] pl-1 tracking-wider no-select">
-              Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow
-            </li>
-          </ul>
         </div>
         <div class="mt-6 self-center justify-end no-select">
-          <a href="https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803"
+          <a href="Assets/files/GK.pdf"
              target="_blank"
              rel="noopener noreferrer"
              class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">

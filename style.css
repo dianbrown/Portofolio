@@ -628,10 +628,10 @@ accents .acc-card {
   width: 200px; height: 200px;
   border: 4px solid transparent;
   border-top-color: rgba(202,59,246,0.9);
-  border-right-color: rgba(202,59,246,0.6);
+  border-right-color: rgba(202,59,246,0.9);
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(202,59,246,0.5);
-  animation: spin 2.5s linear infinite;
+  animation: spin 5s linear infinite;
   pointer-events: none;
   z-index: 5;
 }
@@ -644,10 +644,10 @@ accents .acc-card {
   width: 140px; height: 140px;
   border: 4px solid transparent;
   border-top-color: rgba(202,59,246,0.9);
-  border-right-color: rgba(202,59,246,0.6);
+  border-right-color: rgba(202,59,246,0.9);
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(202,59,246,0.5);
-  animation: spin 1.5s linear infinite;
+  animation: spin 3s linear infinite;
   animation-delay: 0.2s;
   pointer-events: none;
   z-index: 5;
@@ -690,5 +690,13 @@ accents .acc-card {
   padding-top: 4rem;          /* keep your existing vertical padding */
   padding-bottom: 4rem;
 }
+
+@media (max-width: 640px) {
+  .big-globe {
+    width: 400px;
+    height: 400px;
+  }
+}
+
 
 }
