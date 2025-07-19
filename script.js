@@ -72,6 +72,44 @@ document.addEventListener('DOMContentLoaded', () => {
   swiper.slideToLoop(0, 0);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  // Find every canvas with class "starfield"
+  document.querySelectorAll('canvas.starfield').forEach(canvas => {
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+
+    function resize() {
+      canvas.width  = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      stars = Array.from({ length: 200 }, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        size: Math.random() * 1.2 + 0.3,
+        speed: Math.random() * 0.3 + 0.1
+      }));
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#FFF';
+      for (let star of stars) {
+        star.x -= star.speed;
+        if (star.x < 0) star.x = canvas.width;
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.size, 0, 2 * Math.PI);
+        ctx.fill();
+      }
+      requestAnimationFrame(draw);
+    }
+
+    window.addEventListener('resize', resize);
+    resize();
+    draw();
+  });
+});
+
+
+
 
 
 

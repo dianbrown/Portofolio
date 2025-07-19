@@ -331,6 +331,7 @@
   padding: 1rem;
 }
 
+
 .contact_us .form-wrapper {
   background: #3c0174;
   border-radius: 1rem;
@@ -382,6 +383,7 @@
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
+
 .contact_us .submit-btn:hover {
   box-shadow: 0 0 12px rgba(202, 59, 246, 0.9);
 }
@@ -399,6 +401,38 @@
   text-align: center;
   margin-bottom: 1rem;
   color: #ca3bf6;      /* purple to match the glow */
+}
+
+.model-container {
+  flex: 0 0 200px;    /* don’t grow or shrink */
+  margin-right: 1.5rem;
+}
+
+/* Push the form left instead of centering */
+.contact_us .responsive-container-block.container {
+  margin: 0;          /* override the auto-centering */
+  padding: 1rem 0;    /* keep your vertical padding */
+}
+
+.big-globe {
+  width: 500px;
+  height: 500px;
+}
+
+/* 1) Turn your 2‑col flex into a 2‑col grid */
+.contact_us .container-block.form-wrapper .responsive-container-block {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;             /* space between all rows & columns */
+}
+
+/* center the Send Message button */
+.contact_us .submit-btn {
+  display: block;       /* make it a block */
+  margin: 1.5rem auto 0;/* top‑margin stays, left/right auto → centered */
+}
+
+.honeycomb-container .honeycomb-item a {
+  cursor: default;
 }
 
 }

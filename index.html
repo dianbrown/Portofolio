@@ -98,8 +98,9 @@
 </section>
 
   <!-- ABOUT SECTION -->
-  <section id="about" class="py-20 bg-gray-900 text-white">
+  <section id="about" class="relative overflow-hidden py-20 bg-gray-900 text-white">
     <div class="max-w-4xl mx-auto px-4">
+      <canvas class="starfield absolute inset-0 w-full h-full z-0"></canvas>
       <h2 class="text-6xl font-extrabold mb-6 text-center animate__animated animate__fadeInUp animate__delay-1s">
         About Me
       </h2>
@@ -364,50 +365,90 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact" class="py-20 bg-gray-900 text-white">
-  <div class="max-w-4xl mx-auto px-4 text-center">
-    <h2 class="text-4xl font-extrabold mb-6">Get in Touch</h2>
-    <div class="contact_us">
-      <div class="responsive-container-block container">
-        <form class="form-box">
-          <div class="container-block form-wrapper">
-            <!-- <-- Now the heading is _inside_ the white box -->
-            <h3 class="contact-form-title text-3xl font-bold mb-4">Contact</h3>
-            <p class="text-blk contact-subhead">
-              Have a project in mind or just want to say hi? Fill out the form below!
-            </p>
-            <div class="responsive-container-block">
-              <div class="responsive-cell-block" id="first-name">
-              <p class="text-blk input-title">First Name</p>
+<section id="contact" class="relative overflow-hidden py-20 bg-gray-900 text-white">
+  <!-- Heading -->
+  <div class="max-w-4xl mx-auto px-4 text-center mb-20">
+    <h2 class="text-4xl font-extrabold">Get in Touch</h2>
+  </div>
+
+  <canvas id="starfield" class="starfield absolute inset-0 w-full h-full z-0"></canvas>
+
+  <!-- Flex row -->
+  <div
+    class="contact_us relative z-10 flex flex-col md:flex-row items-center justify-center
+           px-4 gap-y-8 md:gap-y-0 md:gap-x-16 max-w-6xl mx-auto"
+  >
+    <!-- 1) Form -->
+    <form class="form-box w-full md:w-2/3 mx-auto">
+      <div class="container-block form-wrapper">
+        <h3 class="contact-form-title text-3xl font-bold mb-4">Contact</h3>
+        <p class="contact-subhead mb-6">
+          Have a project in mind or just want to say hi? Fill out the form below!
+        </p>
+
+        <!-- Two‑column grid for name/email/phone -->
+        <div class="responsive-container-block">
+          <div class="flex flex-col sm:flex-row sm:space-x-4 mb-4">
+            <div class="flex-1">
+              <p class="input-title">First Name</p>
               <input class="input" name="firstName" placeholder="Your first name">
             </div>
-            <div class="responsive-cell-block" id="last-name">
-              <p class="text-blk input-title">Last Name</p>
+            <div class="flex-1">
+              <p class="input-title">Last Name</p>
               <input class="input" name="lastName" placeholder="Your last name">
             </div>
-            <div class="responsive-cell-block" id="email">
-              <p class="text-blk input-title">Email</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:space-x-4 mb-6">
+            <div class="flex-1">
+              <p class="input-title">Email</p>
               <input class="input" type="email" name="email" placeholder="you@example.com">
             </div>
-            <div class="responsive-cell-block" id="phone">
-              <p class="text-blk input-title">Phone No.</p>
+            <div class="flex-1">
+              <p class="input-title">Phone No.</p>
               <input class="input" type="tel" name="phone" placeholder="(123) 456-7890">
             </div>
-            <div class="responsive-cell-block full-width" id="message">
-              <p class="text-blk input-title">Message</p>
-              <textarea class="textinput" name="message" placeholder="Write your message..."></textarea>
-            </div>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
           </div>
-        </form>
-      </div>
+        </div>
+
+        <!-- Full‑width Message -->
+        <div class="mb-6 w-full">
+          <p class="input-title">Message</p>
+          <textarea
+            class="textinput w-full text-black"
+            name="message"
+            placeholder="Write your message..."
+          ></textarea>
+        </div>
+
+        <!-- Centered button -->
+        <div class="mb-6">
+          <button type="submit" class="submit-btn mx-auto block">
+            Send Message
+          </button>
+        </div>
+      </div> <!-- /container-block form-wrapper -->
+    </form>
+
+    <!-- 2) Model, now correctly outside the form -->
+    <div class="model-container flex-shrink-0">
+      <model-viewer
+        src="Assets/Models/Earth.glb"
+        alt="3D planet model"
+        auto-rotate
+        rotation-per-second="30deg"
+        auto-rotate-delay="0"
+        camera-controls
+        interaction-prompt = "none"
+        class="big-globe"
+      ></model-viewer>
     </div>
   </div>
 </section>
 
+
   <!-- your custom script -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <script src="script.js"></script>
   
 </body>
