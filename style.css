@@ -697,12 +697,6 @@ accents .acc-card {
     font-size: 14px;  
   }
 
-  /* smaller section heading */
-  #projects h2.text-6xl {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
   /* reduce the card‑wrapper width so it never overflows */
   #projects .card-wrapper {
     width: 90%;
