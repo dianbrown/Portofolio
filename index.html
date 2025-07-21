@@ -1,109 +1,108 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dian Brown - Portfolio</title>
-  <link rel="shortcut icon" href="img/logo.ico" />
-  <!-- Tailwind CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dian Brown - Portfolio</title>
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Animate.css for entrance animations -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
     rel="stylesheet"
-  />
-  <!-- Animate.css for entrance animations -->
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+    href="https://fonts.cdnfonts.com/css/mona-sans"
     rel="stylesheet"
-  />
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
-  <link
-  href="https://fonts.cdnfonts.com/css/mona-sans"
-  rel="stylesheet"
-  />
-  <!-- Your custom styles -->
-  <link href="style.css" rel="stylesheet" />
-</head>
+    />
+    <!-- custom styles -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
 <body class="bg-white text-gray-900">
 
   <!-- NAVIGATION -->
   <nav id="main-nav" class="fixed top-0 left-0 w-full z-50 pt-8 pb-4">
-  <div class="max-w-6xl mx-auto px-4 flex items-start h-full pt-4">
-    <div class="logo-box"><a href="#hero">DB</a></div>
+    <div class="max-w-6xl mx-auto px-4 flex items-start h-full pt-4">
+      <div class="logo-box"><a href="#hero">DB</a></div>
 
-    <!-- Left group: About & Projects -->
-    <div class="hidden md:flex items-center space-x-6 ml-4 self-center">
-      <a href="#about"
-         class="nav-menu-link animate__animated animate__fadeInDown delay1">
-        About
-      </a>
-      <a href="#projects"
-         class="nav-menu-link animate__animated animate__fadeInDown delay2">
-        Projects
-      </a>
-      <!--TODO add cv pdf to files and set link up-->
-      <a href="#" 
-         class="nav-menu-link animate__animated animate__fadeInDown delay2">
-        My CV
-      </a>
-    </div>
+      <!-- Left group: About & Projects -->
+      <div class="hidden md:flex items-center space-x-6 ml-4 self-center">
+        <a href="#about"
+          class="nav-menu-link animate__animated animate__fadeInDown delay1">
+          About
+        </a>
+        <a href="#projects"
+          class="nav-menu-link animate__animated animate__fadeInDown delay2">
+          Projects
+        </a>
+        <!--TODO add cv pdf to files and set link up-->
+        <a href="#" 
+          class="nav-menu-link animate__animated animate__fadeInDown delay2">
+          My CV
+        </a>
+      </div>
 
-    <!-- Contact & mobile toggle -->
-    <div class="ml-auto flex items-center space-x-6">
-      <a href="#contact" class="contact-box animate__animated animate__flipInX delay3">
-        Contact Me
-      </a>
-      <button id="menu-toggle" class="md:hidden focus:outline-none">
-        <span class="text-3xl">☰</span>
-      </button>
+        <!-- Contact & mobile toggle -->
+      <div class="ml-auto flex items-center space-x-6">
+        <a href="#contact" class="contact-box animate__animated animate__flipInX delay3">
+          Contact Me
+        </a>
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+          <span class="text-3xl">☰</span>
+        </button>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 <!-- MOBILE MENU -->
-<div id="mobile-menu"
-     class="hidden fixed inset-0 bg-white bg-opacity-95 p-8 z-30">
-  <div class="flex flex-col space-y-6 mt-24 text-2xl">
-    <a href="#about"    onclick="toggleMenu()" class="kill-link-style underline--magical">About</a>
-    <a href="#projects" onclick="toggleMenu()" class="kill-link-style underline--magical">Projects</a>
-    <a href="#contact"  onclick="toggleMenu()" class="kill-link-style underline--magical">Contact</a>
-  </div>
-</div>
-
-  <!-- HERO SECTION -->
-<section id="hero">
-  <header class="pt-56 text-center">
-    <img
-    id="dian-image"
-    src="Assets/Images/Dian.jpg"
-    alt="Photo of Dian Brown"
-    class="
-      mx-auto
-      rounded-full
-      w-80 h-80 md:w-96 md:h-96
-      object-cover object-center
-      border-8 border-gray-900
-      shadow-md
-      animate__animated animate__fadeIn delay2
-      transition-colors duration-300 ease-in-out
-      hover:border-green-400
-    "
-    draggable="false"
-  />
-  <div class="max-w-6xl mx-auto px-4">
-    <div
-      class="animate__animated animate__fadeInUp
-             p-14 mt-10 xl:mt-14
-             text-3xl lg:text-5xl font-extrabold">
-      Hey, I’m <span class="text-green-500">Dian Brown.</span><br/>
-      Here, you can check out a bit more about me…
+  <div id="mobile-menu"
+      class="hidden fixed inset-0 bg-white bg-opacity-95 p-8 z-30">
+    <div class="flex flex-col space-y-6 mt-24 text-2xl">
+      <a href="#about"    onclick="toggleMenu()" class="kill-link-style underline--magical">About</a>
+      <a href="#projects" onclick="toggleMenu()" class="kill-link-style underline--magical">Projects</a>
+      <a href="#contact"  onclick="toggleMenu()" class="kill-link-style underline--magical">Contact</a>
     </div>
   </div>
-  </header>
-</section>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <header class="pt-56 text-center">
+      <img
+      id="dian-image"
+      src="Assets/Images/Dian.jpg"
+      alt="Photo of Dian Brown"
+      class="
+        mx-auto
+        rounded-full
+        w-80 h-80 md:w-96 md:h-96
+        object-cover object-center
+        border-8 border-gray-900
+        shadow-md
+        animate__animated animate__fadeIn delay2
+        transition-colors duration-300 ease-in-out
+        hover:border-green-400
+      "
+      draggable="false"
+    />
+    <div class="max-w-6xl mx-auto px-4">
+      <div
+        class="animate__animated animate__fadeInUp
+              p-14 mt-10 xl:mt-14
+              text-3xl lg:text-5xl font-extrabold">
+        Hey, I’m <span class="text-green-500">Dian Brown.</span><br/>
+        Here, you can check out a bit more about me…
+      </div>
+    </div>
+    </header>
+  </section>
 
   <!-- ABOUT SECTION -->
   <section id="about" class="relative overflow-hidden py-20 bg-gray-900 text-white">
@@ -115,6 +114,9 @@
       <p class="text-lg leading-relaxed mb-8 text-center animate__animated animate__fadeInUp animate__delay-2s">
         I’m an IT student who has a passion for anything technology related! <br>
         I love playing music on guitar and piano. Currently I am also a beginner in violin.
+        I have an interest in AI and ML. I first studied Health sciences, and after finishing my 4 year degree,
+        I realised that AI and ML concepts as well as other IT concepts can be applied to the medical field
+        and help with medical advancements.
       </p><br>
       <h2 class="mt-10 text-4xl font-extrabold mb-8 text-center animate__animated animate__fadeInUp animate__delay-3s">
         Technical Skills
@@ -165,188 +167,187 @@
             <img src="Assets/Images/dart.png" alt="threejs">
           </a>
         </li>
-  <!-- repeat one <li> per skill, swapping the href/title/src/alt accordingly -->
       </ul>
-      <section id="certifications" class="py-20 bg-transparent">
-        <div class="max-w-6xl mx-auto px-4">
-          <h2 class="text-4xl font-extrabold mb-8 text-center animate__animated animate__fadeInUp animate__delay-3s">Certifications</h2>
+  <section id="certifications" class="py-20 bg-transparent">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-extrabold mb-8 text-center animate__animated animate__fadeInUp animate__delay-3s">Certifications</h2>
 
-          <!-- Swiper -->
-<div class="swiper certifications-swiper">
-  <div class="swiper-wrapper">
-    <!-- SLIDE 1 -->
-    <div class="swiper-slide">
-      <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
-        <div>
-          <div class="relative w-full h-[50px] mb-4">
-            <img src="Assets/Images/NWU-holding-shape-digital-white.png"
-                 alt="Health science degree"
-                 class="w-auto object-contain mx-auto no-select">
+  <!-- Swiper -->
+  <div class="swiper certifications-swiper">
+    <div class="swiper-wrapper">
+      <!-- SLIDE 1 -->
+      <div class="swiper-slide">
+        <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
+          <div>
+            <div class="relative w-full h-[50px] mb-4">
+              <img src="Assets/Images/NWU-holding-shape-digital-white.png"
+                  alt="Health science degree"
+                  class="w-auto object-contain mx-auto no-select">
+            </div>
+            <h3 class="text-white font-bold text-[20px] mb-4 no-select">
+              BHSC Occupational Health
+            </h3>
+            <p class="text-secondary text-[12px] mb-1 no-select">
+              Degree
+            </p>
+            <p class="text-secondary text-[12px] mb-1 no-select">
+              Issued: 2022 
+            </p>
+            <p class="text-secondary text-[12px] mb-3 no-select">
+              Study period: 2019-2022
+            </p>
           </div>
-          <h3 class="text-white font-bold text-[20px] mb-4 no-select">
-            BHSC Occupational Health
-          </h3>
-          <p class="text-secondary text-[12px] mb-1 no-select">
-            Degree
-          </p>
-          <p class="text-secondary text-[12px] mb-1 no-select">
-            Issued: 2022 
-          </p>
-          <p class="text-secondary text-[12px] mb-3 no-select">
-            Study period: 2019-2022
-          </p>
+          <div class="mt-6 self-center justify-end no-select">
+            <a href="Assets/files/BHSC OHS Degree.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="self-center black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
+              View Credential
+            </a>
+          </div>
         </div>
-        <div class="mt-6 self-center justify-end no-select">
-          <a href="Assets/files/BHSC OHS Degree.pdf"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="self-center black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
-            View Credential
-          </a>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="swiper-slide">
+        <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
+          <div>
+            <div class="relative w-full h-[50px] mb-4">
+              <img src="/Assets/Images/NWU-holding-shape-digital-white.png"
+                  alt="IT Degree"
+                  class="w-auto h-full object-contain no-select">
+            </div>
+            <h3 class="text-white font-bold text-[20px] mb-4 no-select">
+              BSC Information Technology
+            </h3>
+            <p class="text-secondary text-[12px] mb-1 no-select">
+              Degree
+            </p>
+            <p class="text-secondary text-[12px] mb-1 no-select">
+              Issued: 2025 (WIP)
+            </p>
+            <p class="text-secondary text-[12px] mb-3 no-select">
+              Study period: 2023-2025
+            </p>
+          </div>
+          <div class="mt-6 self-center justify-end no-select">
+            <a href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
+              View Credential
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="swiper-slide">
+        <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
+          <div>
+            <div class="relative w-full h-[50px] mb-4">
+              <img src="Assets/Images/Udemy.png"
+                  alt="Udemy"
+                  class="w-auto h-full object-contain no-select">
+            </div>
+            <h3 class="text-white font-bold text-[20px] mb-2 no-select">
+              Full-Stack Web Dev Bootcamp
+            </h3>
+            <p class="text-secondary text-[12px] mb-1 no-select">
+              Certificate
+            </p>
+            <p class="text-secondary text-[12px] mb-3 no-select">
+              Issued: 2025
+            </p>
+          </div>
+          <div class="mt-6 self-center justify-end no-select">
+            <a href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
+              View Credential
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4 -->
+      <div class="swiper-slide">
+        <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
+          <div>
+            <div class="relative w-full h-[50px] mb-4">
+              <img src="Assets/Images/Google.png"
+                  alt="Google Course"
+                  class="w-auto h-full object-contain no-select">
+            </div>
+            <h3 class="text-white font-bold text-[20px] mb-4 no-select">
+              Professional Machine Learning Engineer
+            </h3>
+            <p class="text-secondary text-[12px] mb-1 no-select">
+              Professional Certificate
+            </p>
+            <p class="text-secondary text-[12px] mb-1 no-select">
+              Issued: WIP
+            </p>
+            <p class="text-secondary text-[12px] mb-3 no-select">
+              Currently still completing
+            </p>
+          </div>
+          <div class="mt-6 self-center justify-end no-select">
+            <a href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
+              View Credential
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 5 -->
+      <div class="swiper-slide">
+        <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
+          <div>
+            <div class="relative w-full h-[50px] mb-4">
+              <img src="/Assets/Images/GoldenKey.png"
+                  alt="Golden Key"
+                  class="w-auto h-full object-contain no-select">
+            </div>
+            <h3 class="text-white font-bold text-[20px] mb-4 no-select">
+              Golden Key
+            </h3>
+            <p class="text-secondary text-[12px] mb-1 no-select">
+              Academic Certificate
+            </p>
+            <p class="text-secondary text-[12px] mb-1 no-select">
+              Issued: 2021
+            </p>
+            <p class="text-secondary text-[12px] mb-3 no-select">
+              Obtained during university
+            </p>
+          </div>
+          <div class="mt-6 self-center justify-end no-select">
+            <a href="Assets/files/GK.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
+              View Credential
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- SLIDE 2 -->
-    <div class="swiper-slide">
-      <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
-        <div>
-          <div class="relative w-full h-[50px] mb-4">
-            <img src="/Assets/Images/NWU-holding-shape-digital-white.png"
-                 alt="IT Degree"
-                 class="w-auto h-full object-contain no-select">
-          </div>
-          <h3 class="text-white font-bold text-[20px] mb-4 no-select">
-            BSC Information Technology
-          </h3>
-          <p class="text-secondary text-[12px] mb-1 no-select">
-            Degree
-          </p>
-          <p class="text-secondary text-[12px] mb-1 no-select">
-            Issued: 2025 (WIP)
-          </p>
-          <p class="text-secondary text-[12px] mb-3 no-select">
-            Study period: 2023-2025
-          </p>
-        </div>
-        <div class="mt-6 self-center justify-end no-select">
-          <a href="#"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
-            View Credential
-          </a>
-        </div>
-      </div>
-    </div>
+    <!-- Swiper nav & pagination -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
-    <!-- SLIDE 3 -->
-    <div class="swiper-slide">
-      <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
-        <div>
-          <div class="relative w-full h-[50px] mb-4">
-            <img src="Assets/Images/Udemy.png"
-                 alt="Udemy"
-                 class="w-auto h-full object-contain no-select">
-          </div>
-          <h3 class="text-white font-bold text-[20px] mb-2 no-select">
-            Full-Stack Web Dev Bootcamp
-          </h3>
-          <p class="text-secondary text-[12px] mb-1 no-select">
-            Certificate
-          </p>
-          <p class="text-secondary text-[12px] mb-3 no-select">
-            Issued: 2025
-          </p>
-        </div>
-        <div class="mt-6 self-center justify-end no-select">
-          <a href="#"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
-            View Credential
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- SLIDE 4 -->
-    <div class="swiper-slide">
-      <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
-        <div>
-          <div class="relative w-full h-[50px] mb-4">
-            <img src="Assets/Images/Google.png"
-                 alt="Google Course"
-                 class="w-auto h-full object-contain no-select">
-          </div>
-          <h3 class="text-white font-bold text-[20px] mb-4 no-select">
-            Professional Machine Learning Engineer
-          </h3>
-          <p class="text-secondary text-[12px] mb-1 no-select">
-            Professional Certificate
-          </p>
-          <p class="text-secondary text-[12px] mb-1 no-select">
-            Issued: WIP
-          </p>
-          <p class="text-secondary text-[12px] mb-3 no-select">
-            Currently still completing
-          </p>
-        </div>
-        <div class="mt-6 self-center justify-end no-select">
-          <a href="#"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
-            View Credential
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- SLIDE 5 -->
-    <div class="swiper-slide">
-      <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
-        <div>
-          <div class="relative w-full h-[50px] mb-4">
-            <img src="/Assets/Images/GoldenKey.png"
-                 alt="Golden Key"
-                 class="w-auto h-full object-contain no-select">
-          </div>
-          <h3 class="text-white font-bold text-[20px] mb-4 no-select">
-            Golden Key
-          </h3>
-          <p class="text-secondary text-[12px] mb-1 no-select">
-            Academic Certificate
-          </p>
-          <p class="text-secondary text-[12px] mb-1 no-select">
-            Issued: 2021
-          </p>
-          <p class="text-secondary text-[12px] mb-3 no-select">
-            Obtained during university
-          </p>
-        </div>
-        <div class="mt-6 self-center justify-end no-select">
-          <a href="Assets/files/GK.pdf"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
-            View Credential
-          </a>
-        </div>
-      </div>
-    </div>
-  </div> <!-- /swiper-wrapper -->
-
-  <!-- Swiper nav & pagination -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-pagination"></div>
-</div>
-
-      </section>
+    </section>
 </section>
 
-  <!-- PROJECTS SECTION (now white!) -->
+  <!-- PROJECTS SECTION  -->
   <section id="projects">
     <div class="max-w-6xl mx-auto px-4 text-center mb-12">
       <h2 class="text-6xl font-extrabold mb-20 text-center animate__animated animate__fadeInUp animate__delay-1s text-white ">Projects</h2>
@@ -425,93 +426,88 @@
       </div>
     </div>
 
-  <!-- duplicate .card-wrapper for each project… -->
   </section>
 
 
   <!-- CONTACT SECTION -->
-<section id="contact" class="relative overflow-hidden py-20 bg-gray-900 text-white">
-  <!-- Heading -->
-  <div class="max-w-4xl mx-auto px-4 text-center mb-20">
-    <h2 class="text-6xl font-extrabold mb-6 text-center animate__animated animate__fadeInUp animate__delay-1s">Get in Touch</h2>
-  </div>
-
-  <canvas id="starfield" class="starfield absolute inset-0 w-full h-full z-0"></canvas>
-
-  <!-- Flex row -->
-  <div
-    class="contact_us relative z-10 flex flex-col md:flex-row items-center justify-center
-           px-4 gap-y-8 md:gap-y-0 md:gap-x-16 max-w-6xl mx-auto"
-  >
-    <!-- 1) Form -->
-    <form id="contact-form" action="https://formspree.io/f/xgvzovav" method="POST" class="form-box w-full md:w-2/3 mx-auto">
-      <div class="container-block form-wrapper">
-        <h3 class="contact-form-title text-3xl font-bold mb-4">Contact</h3>
-        <p class="contact-subhead mb-6">
-          Have a project in mind or just want to say hi? Fill out the form below!
-        </p>
-
-        <!-- Two‑column grid for name/email/phone -->
-        <div class="responsive-container-block">
-          <div class="flex flex-col sm:flex-row sm:space-x-4 mb-4">
-            <div class="flex-1">
-              <p class="input-title">First Name</p>
-              <input class="input text-black" name="firstName" placeholder="Your first name">
-            </div>
-            <div class="flex-1">
-              <p class="input-title">Last Name</p>
-              <input class="input text-black" name="lastName" placeholder="Your last name">
-            </div>
-          </div>
-          <div class="flex flex-col sm:flex-row sm:space-x-4 mb-6">
-            <div class="flex-1">
-              <p class="input-title">Email</p>
-              <input class="input text-black" type="email" name="email" placeholder="you@example.com">
-            </div>
-            <div class="flex-1">
-              <p class="input-title">Phone No.</p>
-              <input class="input text-black" type="tel" name="phone" placeholder="(123) 456-7890">
-            </div>
-          </div>
-        </div>
-
-        <!-- Full‑width Message -->
-        <div class="mb-6 w-full">
-          <p class="input-title">Message</p>
-          <textarea
-            class="textinput w-full text-black"
-            name="message"
-            placeholder="Write your message..."
-          ></textarea>
-        </div>
-
-        <!-- Centered button -->
-        <div class="mb-6">
-          <button type="submit" class="submit-btn mx-auto block">
-            Send Message
-          </button>
-        </div>
-      </div> <!-- /container-block form-wrapper -->
-    </form>
-
-    <!-- 2) Model, now correctly outside the form -->
-    <div class="model-container flex-shrink-0">
-      <model-viewer
-        src="Assets/Models/Earth.glb"
-        alt="3D planet model"
-        auto-rotate
-        rotation-per-second="30deg"
-        auto-rotate-delay="0"
-        camera-controls
-        interaction-prompt = "none"
-        class="big-globe"
-      ></model-viewer>
+  <section id="contact" class="relative overflow-hidden py-20 bg-gray-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center mb-20">
+      <h2 class="text-6xl font-extrabold mb-6 text-center animate__animated animate__fadeInUp animate__delay-1s">Get in Touch</h2>
     </div>
-  </div>
-</section>
+
+    <canvas id="starfield" class="starfield absolute inset-0 w-full h-full z-0"></canvas>
+
+    <div
+      class="contact_us relative z-10 flex flex-col md:flex-row items-center justify-center
+            px-4 gap-y-8 md:gap-y-0 md:gap-x-16 max-w-6xl mx-auto"
+    >
+      <!-- 1) Form -->
+      <form id="contact-form" action="https://formspree.io/f/xgvzovav" method="POST" class="form-box w-full md:w-2/3 mx-auto">
+        <div class="container-block form-wrapper">
+          <h3 class="contact-form-title text-3xl font-bold mb-4">Contact</h3>
+          <p class="contact-subhead mb-6">
+            Have a project in mind or just want to say hi? Fill out the form below!
+          </p>
+
+          <!-- Two‑column grid for name/email/phone -->
+          <div class="responsive-container-block">
+            <div class="flex flex-col sm:flex-row sm:space-x-4 mb-4">
+              <div class="flex-1">
+                <p class="input-title">First Name</p>
+                <input class="input text-black" name="firstName" placeholder="Your first name">
+              </div>
+              <div class="flex-1">
+                <p class="input-title">Last Name</p>
+                <input class="input text-black" name="lastName" placeholder="Your last name">
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:space-x-4 mb-6">
+              <div class="flex-1">
+                <p class="input-title">Email</p>
+                <input class="input text-black" type="email" name="email" placeholder="you@example.com">
+              </div>
+              <div class="flex-1">
+                <p class="input-title">Phone No.</p>
+                <input class="input text-black" type="tel" name="phone" placeholder="(123) 456-7890">
+              </div>
+            </div>
+          </div>
+
+          <!-- Full‑width Message -->
+          <div class="mb-6 w-full">
+            <p class="input-title">Message</p>
+            <textarea
+              class="textinput w-full text-black"
+              name="message"
+              placeholder="Write your message..."
+            ></textarea>
+          </div>
+
+          <div class="mb-6">
+            <button type="submit" class="submit-btn mx-auto block">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="model-container flex-shrink-0">
+        <model-viewer
+          src="Assets/Models/Earth.glb"
+          alt="3D planet model"
+          auto-rotate
+          rotation-per-second="30deg"
+          auto-rotate-delay="0"
+          camera-controls
+          interaction-prompt = "none"
+          class="big-globe"
+        ></model-viewer>
+      </div>
+    </div>
+  </section>
 
 
-  <!-- your custom script -->
+  <!-- custom scripts -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <script src="script.js"></script>
