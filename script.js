@@ -106,6 +106,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  new WOW({
+    boxClass:     'wow',            
+    animateClass: 'animate__animated', // Animate.css v4 base class
+    offset:       50,              
+    mobile:       true,              
+    live:         true               
+  }).init();
+});
 
 
 

@@ -693,9 +693,8 @@ accents .acc-card {
 
 /* mobile‑only tweaks */
 @media (max-width: 640px) {
-  /* globally shrink your base font */
   html {
-    font-size: 14px;   /* or whatever feels right */
+    font-size: 14px;  
   }
 
   /* smaller section heading */
@@ -707,7 +706,7 @@ accents .acc-card {
   /* reduce the card‑wrapper width so it never overflows */
   #projects .card-wrapper {
     width: 90%;
-    max-width: 280px;   /* down from 320px */
+    max-width: 280px;   
     height: auto;
   }
 
@@ -716,15 +715,11 @@ accents .acc-card {
     width: 90%;
     max-width: 280px;
 
-    /* restore enough height so the absolute children stay inside */
     height: 520px;
-    /* optionally you can use a min-height instead:
-       min-height: 520px; 
-    */
   }
 
 
-  /* if you want to hide or tweak the purple rings on mobile: */
+  /*hide or tweak the purple rings on mobile: */
   #projects .card-wrapper .accents .light,
   #projects .card-wrapper .accents .light.sm {
     display: none;
@@ -739,8 +734,7 @@ accents .acc-card {
     font-size: 1.25rem;
   }
 
-  /* any other mobile‑only overrides you like… */
-}
 
+}
 
 }
