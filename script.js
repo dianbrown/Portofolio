@@ -1,6 +1,4 @@
-// script.js
-
-// 1) Toggle mobile menu
+// Toggle mobile menu
 function toggleMenu() {
   document.getElementById('mobile-menu').classList.toggle('hidden');
 }
@@ -8,7 +6,7 @@ document
   .getElementById('menu-toggle')
   .addEventListener('click', toggleMenu);
 
-// 2) Smooth scrolling for anchor links
+// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     // if mobile menu is open, close it
@@ -25,7 +23,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// 3) Scroll watcher → toggles “scrolled” class once, outside the loop
+// Scroll watcher → toggles “scrolled” class once, outside the loop
 const nav = document.getElementById("main-nav");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
@@ -45,7 +43,7 @@ document.querySelectorAll(".honeycomb-item a").forEach(link => {
 
 // Certifications swiper
 // Initialize the certifications swiper
-// wrap in DOMContentLoaded just to be 100% sure everything’s parsed
+// wrap in DOMContentLoaded just to be sure everything’s parsed
 document.addEventListener('DOMContentLoaded', () => {
   const selector   = '.certifications-swiper';
   const realSlides = document.querySelectorAll(selector + ' .swiper-slide').length;
@@ -108,6 +106,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  new WOW({
+    boxClass:     'wow',            
+    animateClass: 'animate__animated', // Animate.css v4 base class
+    offset:       50,              
+    mobile:       true,              
+    live:         true               
+  }).init();
+});
 
 
 

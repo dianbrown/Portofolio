@@ -1,4 +1,3 @@
-/* style.css */
 /* remove underlines and inherit text color */
 .kill-link-style {
   text-decoration: none;
@@ -19,7 +18,7 @@
   position: absolute;
   left: 0; bottom: -2px;
   width: 100%; height: 2px;
-  background-color: #10B981; /* Tailwind green-500 */
+  background-color: #10B981;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
@@ -51,38 +50,38 @@
   /* Border, sizing & typography */
   border-style: solid;
   border-width: 4px;
-  border-radius: .375rem;          /* 6px */
-  border-color: #111827;           /* Tailwind’s gray-900 */
-  padding: .5rem;                  /* 8px */
-  font-size: 1.875rem;               /* 24px, text-3xl */
-  line-height: 2.25rem;               /* 32px, leading-9 */
-  font-weight: 800;                /* extrabold */
-  color: #111827;                  /* gray-900 */
+  border-radius: .375rem;         
+  border-color: #111827;         
+  padding: .5rem;                  
+  font-size: 1.875rem;               
+  line-height: 2.25rem;               
+  font-weight: 800;                
+  color: #111827;                  
 }
 
 .logo-box:hover {
-  border-color: #047857;           /* Tailwind’s green-700 hex */
+  border-color: #047857;
 }
 
 .nav-menu-link {
   display: inline-block;
-  margin-left: 1.5rem;    /* ml-6 */
-  margin-right: 0.75rem;  /* mr-3 */
-  padding: 0 0.25rem;      /* small left/right padding */
-  font-size: 1.875rem;       /* text-3xl */
-  line-height: 2.25rem;       /* leading-9 */
-  font-weight: 800;        /* extrabold */
+  margin-left: 1.5rem;   
+  margin-right: 0.75rem; 
+  padding: 0 0.25rem;    
+  font-size: 1.875rem;      
+  line-height: 2.25rem;      
+  font-weight: 800;        
   cursor: pointer;
   color: inherit;
   text-decoration: none;
 
-  /* 1) persistent underline: a 0.25em high green bar at bottom */
+  /* persistent underline: a 0.25em high green bar at bottom */
   background-image: linear-gradient(120deg, #35D399 0%, #35D399 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.25em;
   background-position: left bottom;
 
-  /* 2) transitions for the fill and text color */
+  /* transitions for the fill and text color */
   transition: background-size 0.4s ease-in-out,
               color           0.4s ease-in-out;
 }
@@ -107,52 +106,52 @@
   position: absolute;
   top: 0; left: 0;
   width: 100%;
-  height: 1.5rem;              /* 4px “tiny” line */
-  background-color: #35D399;    /* Tailwind green-400 */
+  height: 1.5rem;              
+  background-color: #35D399;    
   transition: height 0.3s ease-in-out;
-  z-index: -1;                  /* sit behind your nav content */
+  z-index: -1;                 
 }
 
-/* 2) When scrolled: expand that bar to fill the nav’s full height */
+/* When scrolled: expand that bar to fill the nav’s full height */
 #main-nav.scrolled::before {
   height: 100%;
 }
 
-/* 3) Link colors: dark on white, flip to white on green */
+/* Link colors: dark on white, flip to white on green */
 #main-nav .nav-menu-link {
-  color: #111827;               /* Tailwind gray-900 */
+  color: #111827;              
   transition: color 0.3s ease;
   transition: background-size 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 #main-nav.scrolled .nav-menu-link {
-  color: #111827;  /* black text */
+  color: #111827;  
   background-image: linear-gradient(120deg, #ca3bf6 0%, #ca3bf6 100%); /* blue-500 */
   background-repeat: no-repeat;
-  background-size: 100% 0.25em;  /* persistent thin underline */
+  background-size: 100% 0.25em;  
   background-position: left bottom;
 }
 
 #main-nav.scrolled .nav-menu-link:hover {
-  background-size: 100% 100%;    /* grow from underline → full */
-  color: #030202;                /* white text on blue */
+  background-size: 100% 100%;    
+  color: #030202;                
 }
 
 .contact-box {
   display: inline-block;
   user-select: none;
-  border: 4px solid #111827;      /* same gray-900 border */
-  border-radius: .375rem;         /* 6px */
-  padding: .5rem;                 /* 8px */
-  font-size: 1.875rem;              /* text-3xl */
-  line-height: 2.25rem;              /* leading-9 */
-  font-weight: 800;               /* extrabold */
-  color: #111827;                 /* gray-900 text */
+  border: 4px solid #111827;     
+  border-radius: .375rem;         
+  padding: .5rem;                 
+  font-size: 1.875rem;             
+  line-height: 2.25rem;             
+  font-weight: 800;               
+  color: #111827;                
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-box:hover {
-  background-color: #111827;      /* fill black */
-  color: #ffffff;                 /* text white */
+  background-color: #111827;     
+  color: #ffffff;                
 }
 
 /* Honeycomb layout */
@@ -163,7 +162,7 @@
   max-width: 50rem;
 }
 
-/* Make images block for sizing, then hide them (we’ll use as background) */
+/* Make images block for sizing, then hide them */
 .honeycomb-container img {
   width: 100%;
   display: block;
@@ -186,7 +185,7 @@
   content: "";
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
-  background-color: #ca3bf6;  /* outline color rgb(175, 32, 218)*/
+  background-color: #ca3bf6;  
   clip-path: polygon(
     50% 0%, 93.3% 25%, 93.3% 75%,
     50% 100%, 6.7% 75%, 6.7% 25%
@@ -285,8 +284,8 @@
   overflow-x: hidden;
   overflow-y: visible;
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;    /* still clip slides */
-  position: relative;   /* for arrow positioning */
+  padding-bottom: 1.5rem;    
+  position: relative;   
 }
 
 /* still let the inner wrapper overflow so looped clones can slide in/out */
@@ -301,12 +300,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;      /* or however wide you want your cards */
+  width: 300px;      /* card width */
   max-width: 300px;
 
   position: relative;
   box-shadow:
-    0 0 10px rgba(255,255,255,0.1),   /* subtle white ambient */
+    0 0 10px rgba(255,255,255,0.1), 
     0 0 20px rgba(53,211,153,0.25);
 }
 
@@ -400,7 +399,7 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
-  color: #ca3bf6;      /* purple to match the glow */
+  color: #ca3bf6;     
 }
 
 .model-container {
@@ -419,7 +418,7 @@
   height: 500px;
 }
 
-/* 1) Turn your 2‑col flex into a 2‑col grid */
+/* Turn  2‑col flex into a 2‑col grid */
 .contact_us .container-block.form-wrapper .responsive-container-block {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;             /* space between all rows & columns */
@@ -427,8 +426,8 @@
 
 /* center the Send Message button */
 .contact_us .submit-btn {
-  display: block;       /* make it a block */
-  margin: 1.5rem auto 0;/* top‑margin stays, left/right auto → centered */
+  display: block;       
+  margin: 1.5rem auto 0;
 }
 
 .honeycomb-container .honeycomb-item a {
@@ -453,11 +452,10 @@
 #projects .card-wrapper {
   position: relative;
   width: 320px;
-  height: 520px; /* enough to contain card (+20px top offset) */
+  height: 520px; 
   margin: 0 auto;
 }
 
-/* The “glass” card */
 #projects .card-wrapper .card {
   position: absolute;
   top: 10px;
@@ -540,11 +538,9 @@
   animation: wobble 26s ease-in-out -18s infinite;
 }
 
-/* rotating circle highlights */
-/* ————— Projects: spinning purple chaser trail ————— */
 #projects .card-wrapper .accents .light {
   position: absolute;
-  top: 50%; left: -60px;       /* tweak so it just peeks out left */
+  top: 50%; left: -60px;       
   width: 200px; height: 200px;
   border: 4px solid transparent;
   border-top-color: rgba(202,59,246,0.9);
@@ -558,7 +554,7 @@
 
 #projects .card-wrapper .accents .light.sm {
   position: absolute;
-  top: 20%; right: -40px;       /* tweak so it just peeks out right */
+  top: 20%; right: -40px;       
   width: 140px; height: 140px;
   border: 4px solid transparent;
   border-top-color: rgba(202,59,246,0.9);
@@ -612,12 +608,11 @@ accents .acc-card {
 }
 
 /* ————— Projects: spinning purple trail ————— */
-/* make sure your wrapper is .card-wrapper */
 #projects .card-wrapper {
   width: 320px;
-  height: 520px; /* gives room for 500px card + 20px top offset */
+  height: 520px; 
   position: relative;
-  margin-bottom: 4rem; /* spacing if you stack multiple */
+  margin-bottom: 4rem; 
 }
 
 /* outer ring */
@@ -660,10 +655,8 @@ accents .acc-card {
 }
 
 /* ==== peek‑out rings for Projects cards ==== */
-/* outer ring peeks out left */
 #projects .card-wrapper .accents .light {
-  /* remove the old 50%‑50% centering */
-  left: -60px;           /* tweak this so the ring just peeks out */
+  left: -60px;           
   top: 70%;
   transform: translateY(-50%) rotate(0deg);
   transform-origin: center center;
@@ -671,8 +664,8 @@ accents .acc-card {
 
 /* inner ring peeks out right */
 #projects .card-wrapper .accents .light.sm {
-  left: auto;            /* cancel the left value */
-  right: -40px;          /* tweak this to taste */
+  left: auto;            
+  right: -40px;        
   top: 20%;
   transform: translateY(-50%) rotate(0deg);
   transform-origin: center center;
@@ -686,8 +679,8 @@ accents .acc-card {
 }
 
 #projects {
-  background-color: #343434;  /* whatever hex/RGBA you like */
-  padding-top: 4rem;          /* keep your existing vertical padding */
+  background-color: #343434;  
+  padding-top: 4rem;          
   padding-bottom: 4rem;
 }
 
@@ -698,5 +691,44 @@ accents .acc-card {
   }
 }
 
+/* mobile‑only tweaks */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;  
+  }
+
+  /* reduce the card‑wrapper width so it never overflows */
+  #projects .card-wrapper {
+    width: 90%;
+    max-width: 280px;   
+    height: auto;
+  }
+
+  /* make the glass card itself fluid */
+  #projects .card-wrapper {
+    width: 90%;
+    max-width: 280px;
+
+    height: 520px;
+  }
+
+
+  /*hide or tweak the purple rings on mobile: */
+  #projects .card-wrapper .accents .light,
+  #projects .card-wrapper .accents .light.sm {
+    display: none;
+  }
+
+  /* tighten up nav/logo/font sizes */
+  .logo-box {
+    padding: .5rem;
+    font-size: 1.5rem;
+  }
+  .nav-menu-link, .contact-box {
+    font-size: 1.25rem;
+  }
+
+
+}
 
 }
