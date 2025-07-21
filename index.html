@@ -30,7 +30,7 @@
 
   <!-- NAVIGATION -->
   <nav id="main-nav" class="fixed top-0 left-0 w-full z-50 pt-8 pb-4">
-    <div class="max-w-6xl mx-auto px-4 flex items-start h-full pt-4">
+    <div class="max-w-6xl mx-auto px-4 flex items-center h-full py-4">
       <div class="logo-box"><a href="#hero">DB</a></div>
 
       <!-- Left group: About & Projects -->
@@ -55,8 +55,8 @@
         <a href="#contact" class="contact-box animate__animated animate__flipInX delay3">
           Contact Me
         </a>
-        <button id="menu-toggle" class="md:hidden focus:outline-none">
-          <span class="text-3xl">☰</span>
+        <button id="menu-toggle" class="md:hidden focus:outline-none -mt-2">
+          <span class="text-5xl self-center">☰</span>
         </button>
       </div>
     </div>
@@ -65,10 +65,11 @@
 <!-- MOBILE MENU -->
   <div id="mobile-menu"
       class="hidden fixed inset-0 bg-white bg-opacity-95 p-8 z-30">
-    <div class="flex flex-col space-y-6 mt-24 text-2xl">
+    <div class="flex flex-col space-y-6 mt-28 text-2xl">
       <a href="#about"    onclick="toggleMenu()" class="kill-link-style underline--magical">About</a>
       <a href="#projects" onclick="toggleMenu()" class="kill-link-style underline--magical">Projects</a>
       <a href="#contact"  onclick="toggleMenu()" class="kill-link-style underline--magical">Contact</a>
+      <a href="#"  onclick="toggleMenu()" class="kill-link-style underline--magical">View CV</a>
     </div>
   </div>
 
@@ -367,7 +368,7 @@
           <img src="Assets/Images/Tkinter.png" alt="">
           <h2>Python Text App</h2>
           <p>Text Message app made with Tkinter only in python. Works over internet connection.</p>
-          <div class="button">View Github</div>
+          <div class="button"><a href="https://github.com/IncredibleZuess/315TextingApp"></a>View Github</div>
         </div>
       </div>
 
@@ -385,7 +386,7 @@
           <img src="Assets/Images/guitar.png" alt="">
           <h2>Guitar Tab Manager</h2>
           <p>Desktop application for managing guitar tab storage. Made with C++ GUI version made in Qt.</p>
-          <div class="button">View Github</div>
+          <div class="button"><a href="https://github.com/dianbrown/Guitar-Tab-Manager">View Github</a></div>
         </div>
       </div>
 
@@ -403,7 +404,7 @@
           <img src="Assets/Images/Spaceship.png" alt="">
           <h2>SpaceTraders (WIP)</h2>
           <p>SpaceTraders web based game with the use of GODOT and space.io API. Art made with aseprite and music composed by me.</p>
-          <div class="button">View Github</div>
+          <div class="button"><a href="https://github.com/IncredibleZuess/projectspace/tree/main"></a>View Github</div>
         </div>
       </div>
 
