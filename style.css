@@ -731,4 +731,43 @@ accents .acc-card {
 
 }
 
+/* ─────── socials ─────── */
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  color: #444;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.75rem;      /* icon size */
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+.social-button:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+/* platform brand colors */
+.social-button--linkedin   { color: #0077b5; }
+.social-button--github     { color: #6e5494; }
+.social-button--instagram {color: #e4405f;}
+
+/* hover background same as brand */
+.social-button--linkedin:hover { background: #0077b5; }
+.social-button--github:hover   { background: #6e5494; }
+.social-button--instagram:hover {background: #e4405f; color: #fff;}
+
 }
