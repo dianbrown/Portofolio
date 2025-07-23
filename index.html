@@ -48,8 +48,7 @@
           class="nav-menu-link animate__animated animate__fadeInDown delay2">
           Projects
         </a>
-        <!--TODO add cv pdf to files and set link up-->
-        <a href="#" 
+        <a href="/Assets/files/Dian Brown CV.pdf" 
           class="nav-menu-link animate__animated animate__fadeInDown delay2">
           My CV
         </a>
@@ -246,7 +245,7 @@
         <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
           <div>
             <div class="relative w-full h-[50px] mb-4">
-              <img src="/Assets/Images/NWU-holding-shape-digital-white.png"
+              <img src="Assets/Images/NWU-holding-shape-digital-white.png"
                   alt="IT Degree"
                   class="w-auto h-full object-contain no-select">
             </div>
@@ -264,11 +263,11 @@
             </p>
           </div>
           <div class="mt-6 self-center justify-end no-select">
-            <a href="#"
+            <a href="Assets/files/CurrentMarks_unlocked.pdf"
               target="_blank"
               rel="noopener noreferrer"
               class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
-              View Credential
+              View Current Marks
             </a>
           </div>
         </div>
@@ -279,22 +278,22 @@
         <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
           <div>
             <div class="relative w-full h-[50px] mb-4">
-              <img src="Assets/Images/Udemy.png"
-                  alt="Udemy"
+              <img src="Assets/Images/NWU-holding-shape-digital-white.png"
+                  alt="Legal Knowledge"
                   class="w-auto h-full object-contain no-select">
             </div>
             <h3 class="text-white font-bold text-[20px] mb-2 no-select">
-              Full-Stack Web Dev Bootcamp
+              Legal Knowledge for Health Science
             </h3>
             <p class="text-secondary text-[12px] mb-1 no-select">
               Certificate
             </p>
             <p class="text-secondary text-[12px] mb-3 no-select">
-              Issued: 2025
+              Issued: 2022
             </p>
           </div>
           <div class="mt-6 self-center justify-end no-select">
-            <a href="#"
+            <a href="Assets/files/Short Learning Programme Legal Knowledge_20250721_0001.pdf"
               target="_blank"
               rel="noopener noreferrer"
               class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
@@ -327,11 +326,11 @@
             </p>
           </div>
           <div class="mt-6 self-center justify-end no-select">
-            <a href="#"
+            <a href="https://cloud.google.com/learn/certification/machine-learning-engineer"
               target="_blank"
               rel="noopener noreferrer"
               class="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select">
-              View Credential
+              View Course
             </a>
           </div>
         </div>
@@ -342,7 +341,7 @@
         <div class="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
           <div>
             <div class="relative w-full h-[50px] mb-4">
-              <img src="/Assets/Images/GoldenKey.png"
+              <img src="Assets/Images/GoldenKey.png"
                   alt="Golden Key"
                   class="w-auto h-full object-contain no-select">
             </div>
@@ -454,7 +453,7 @@
           <img src="Assets/Images/Microscope.png" alt="">
           <h2>Asbestos Research Paper</h2>
           <p>2022 BHS Occupational Health science honours research paper on Asbestos and the different types.</p>
-          <div class="button">View Paper</div>
+          <div class="button"><a href="/Assets/files/Project Presentation ver 3.pdf"> View Project </a></div>
         </div>
       </div>
     </div>
@@ -534,7 +533,8 @@
           camera-controls
           interaction-prompt = "none"
           class="big-globe"
-        ></model-viewer>
+        ><div slot="progress-bar" class="mv-hidden-progress"></div>
+      </model-viewer>
       </div>
     </div>
   </section>

@@ -279,7 +279,7 @@
     .honeycomb-container .honeycomb-item:nth-child(9n+8) {grid-column:6}
     .honeycomb-container .honeycomb-item:nth-child(9n+0) {grid-column:8}
   }
-
+}
 .certifications-swiper {
   overflow-x: hidden;
   overflow-y: visible;
@@ -770,4 +770,8 @@ accents .acc-card {
 .social-button--github:hover   { background: #6e5494; }
 .social-button--instagram:hover {background: #e4405f; color: #fff;}
 
+.mv-hidden-progress {
+  display: none;
+  visibility: hidden;
 }
+
