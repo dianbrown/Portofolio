@@ -23,20 +23,6 @@ A responsive, single-page personal portfolio website featuring a hero section, a
 
 ---
 
-## 📂 Project Structure
-
-\`\`\`
-.
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-│       
-└── README.md
-\`\`\`
-
----
-
 ## 💾 Installation & Usage
 
 1. **Clone the repo**  
